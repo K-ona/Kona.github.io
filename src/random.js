@@ -6,7 +6,7 @@
     $("#start").click(function () {
         var list = $("#list").val().replace(/ +/g, " ").replace(/^ | $/g, "").split(" ");
         if (!run) {
-            heading.html(heading.html().replace("那就这个吧！", "帮你选一个！"));
+            heading.html(heading.html().replace("那就这个吧！", ""));
             $(this).val("停止");
             timer = setInterval(function () {
                 var r = Math.ceil(Math.random() * list.length),
