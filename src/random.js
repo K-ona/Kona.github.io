@@ -28,7 +28,7 @@ $(function () {
             }, 50);
             run = 1;
         } else {
-           heading.html(heading.html().replace("吃什么呢？", "这个如何！"));
+           heading.html(heading.html().replace("吃什么呢？", "这个如何"));
             $(this).val("不行，换一个");
             clearInterval(timer);
             run = 0;
