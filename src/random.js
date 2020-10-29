@@ -6,7 +6,7 @@ $(function () {
     $("#start").click(function () {
         var list = $("#list").val().replace(/ +/g, " ").replace(/^ | $/g, "").split(" ");
         if (!run) {
-            heading.html(heading.html().replace("吃这个！", "吃什么？"));
+            heading.html(heading.html().replace("这个如何", "吃什么呢？"));
             $(this).val("停止");
             timer = setInterval(function () {
                 var r = Math.ceil(Math.random() * list.length),
@@ -28,7 +28,7 @@ $(function () {
             }, 50);
             run = 1;
         } else {
-           heading.html(heading.html().replace("吃什么？", "吃这个！"));
+           heading.html(heading.html().replace("吃什么呢？", "这个如何！"));
             $(this).val("不行，换一个");
             clearInterval(timer);
             run = 0;
