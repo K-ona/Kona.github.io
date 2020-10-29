@@ -7,6 +7,6 @@
             }
         })
         $('#stop').click(function(){
-            alert('这么作？今天别吃了！')
+            alert('要不别选了，自己做吧！')
             $(this).hide();
         })
